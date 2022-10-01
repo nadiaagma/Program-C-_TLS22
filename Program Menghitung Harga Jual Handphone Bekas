@@ -1,0 +1,21 @@
+//C++ program untuk menghitung harga jual handphone bekas
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int hargaBeli, hargaJual_tahun1, hargaJual_tahun2, hargaJual_tahun3;
+    cout<<"--Program Perhitungan Harga Jual Handphone Bekas--"<<"\n";
+    cout<<"Harga beli handphone: Rp ";
+    cin>> hargaBeli;
+    hargaJual_tahun1= hargaBeli-(hargaBeli*0.15);
+    hargaJual_tahun2= hargaJual_tahun1-(hargaJual_tahun1*0.12);
+    hargaJual_tahun3= hargaJual_tahun2-(hargaJual_tahun2*0.10);
+    cout<<"Harga jual handphone bekas tahun pertama: Rp "<<hargaJual_tahun1<<"\n";
+    cout<<"Harga jual handphone bekas tahun kedua: Rp "<<hargaJual_tahun2<<"\n";
+    cout<<"Harga jual handphone bekas tahun ketiga: Rp "<<hargaJual_tahun3<<"\n";
+
+    return 0;
+}
